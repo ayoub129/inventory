@@ -21,10 +21,26 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ayoub_br.inventory"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "eas": {
+      "build": {
+        "development": {
+          "distribution": "internal",
+          "android": {
+            "gradleCommand": ":app:assembleRelease"
+          }
+        }
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "eef01ce1-3126-4827-a1d4-717996b7ac6c"
+      }
     }
   }
 }
